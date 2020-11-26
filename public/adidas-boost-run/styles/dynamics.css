@@ -1,0 +1,1508 @@
+.banner-boostland{
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 6.5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 9;
+}
+
+.banner-boostland img{
+    transform:translateX(58%);
+    transition:.4s var(--runners-ins--ease-out);
+    max-width:105%;
+    max-height:100%;
+}
+
+.banner-boostland:hover img{
+    transform:translateX(0);
+}
+
+
+@media screen and (max-width: 767px){
+    .banner-boostland{
+        height:5.5em;
+    }
+
+    .banner-boostland:hover img{
+        transform:translateX(5%);
+    }
+}
+
+
+/*global*/
+#runners-ins--wrapper .runners-ins--title{
+    margin-bottom:50px;
+}
+/*/global*/
+
+/*home*/
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .logo{
+    position:relative;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .logo .share{
+    position: absolute;
+    left: 0;
+    top: calc(100% + 24px);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    flex-direction: column;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .logo .share p{
+    margin: 0; 
+    margin-top: 16px; 
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .logo .share a{
+    margin:5px !important;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links .link:first-child{
+    z-index:1;
+    padding-left:50px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links .link.second{
+    margin-left:-50px;
+    padding-left:80px;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links .link.second:last-child{
+    box-shadow:none;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links .link:last-child .icons span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 31px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../images/icons/icon-grupos.png");
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links .link:first-child:before{
+    left:-50px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links{
+    /*overflow:hidden;*/
+    background:transparent;
+    border-radius:0;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding-left:50px;
+    /*width: calc(128% + 50px)*/
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links .link{
+    padding: 18px 90px 18px 50px;
+    /*box-shadow:2px 0 10px var(--runners-ins--color-extra-1);*/
+    border-radius: 0 60px 60px 0;
+    background-color:var(--runners-ins--color-main-2);
+    width:auto;
+    transition:.4s var(--runners-ins--ease-out);
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links .link:hover{
+    background:var(--runners-ins--color-grayscale-f);
+    font-weight:bold;
+    padding-left:80px;
+    padding-right:80px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links .link:last-child:hover{
+    padding-left:110px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-home{
+    padding: 8em 0;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article{
+    padding-top: 160px;
+}
+
+#runners-ins--wrapper .runners-ins--menu{
+    top: 8em;
+    padding-top: 4em;
+}
+/*/home*/
+
+
+/*prova*/
+
+#runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article .dynamic-content-container{
+    position:relative;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article .dynamic-content{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:.6s var(--runners-ins--ease-out) .3s;
+    transform:translateX(-4em);
+    z-index:-1;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article .dynamic-content.active{
+    position:relative;
+    opacity:1;
+    transform:translateX(0);
+    transition:.3s var(--runners-ins--ease-in);
+    z-index:0;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article .dynamic-content.inactive{
+    transform:translateX(4em);
+    opacity:0;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article .dynamic-content.backwards{
+    transform:translateX(-4em);
+    opacity:0;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col .links li a{  
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 1;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col .links li a.dynamic-link{
+    transition: .4s var(--runners-ins--ease-in-out) .1s;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col .links li a.dynamic-link:hover,
+#runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col .links li a.dynamic-link.breadcrumb{
+    padding-left: 40px;
+    max-width: 390px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col .links li a.dynamic-link.breadcrumb{
+    background:var(--runners-ins--color-grayscale-f);
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col p.add-info{
+    margin:0;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col:first-child{
+    width:45%;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col:last-child{
+    width:55%;
+}
+
+/*/prova*/
+
+
+
+/*premiacao*/
+#runners-ins--wrapper .runners-ins--section.parallax-premiacao .col-individual,
+#runners-ins--wrapper .runners-ins--section.parallax-premiacao .col-dupla
+{
+    overflow:hidden;
+    align-items:stretch;
+    justify-content:center;
+    display:flex;
+    position:relative;
+    height:100%;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-premiacao .dynamic-content,
+#runners-ins--wrapper .runners-ins--section.parallax-premiacao .dynamic-link
+{
+    transition:.4s var(--runners-ins--ease-in-out);
+    position:absolute !important;
+    top:0;
+    right:-100%;
+    opacity:0;
+    width:100%;
+    height:100%;
+    align-self:stretch;
+    overflow:hidden;
+    position:relative;
+    box-sizing:border-box;
+    padding:0!important;
+    display:flex;
+    align-items:stretch;
+    justify-content:center;
+    z-index:-1;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-premiacao .dynamic-link{
+    align-items:center;
+}
+    #runners-ins--wrapper .runners-ins--section.parallax-premiacao .dynamic-content.content-individual,
+    #runners-ins--wrapper .runners-ins--section.parallax-premiacao .dynamic-link.title-individual
+    {
+        transform-origin:left center;
+        margin-top:0!important;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-premiacao .dynamic-content.content-dupla,
+    #runners-ins--wrapper .runners-ins--section.parallax-premiacao .dynamic-link.title-dupla
+    {
+        transform-origin:right center;
+        margin-top:0!important;
+    }
+
+#runners-ins--wrapper .runners-ins--section.parallax-premiacao .dynamic-content.active,
+#runners-ins--wrapper .runners-ins--section.parallax-premiacao .dynamic-link.active
+{
+    right:0;
+    opacity:1;
+    z-index:0;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-premiacao .dynamic-content .dynamic-content-container
+{
+    padding:33px 60px;
+    width:100%;
+    align-self:stretch;
+    overflow:hidden;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-premiacao .btn-close{
+    z-index:1;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-premiacao small{
+    display:block;
+    margin-top:12px;
+    font-size:11px;
+}
+
+/*/premiacao*/
+
+
+
+/*kit*/
+#runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--kit-container{
+    height: auto;
+    padding: 30px 0 100px;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--title{
+    margin-bottom: 70px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--kit-container .runners-ins--kit{
+    height: auto;
+    position: relative;
+    max-width: calc(100% - 5em);
+    transform: translateX(135px);
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: flex-end;
+    padding-right: 130px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    position: relative;
+    background-color:var(--runners-ins--color-main-2);
+    color:var(--runners-ins--color-grayscale-1);
+    border-top-right-radius: 30em;
+    border-bottom-right-radius: 30em;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article img{
+    position: absolute;
+    top: -74px;
+    left: -420px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article .text{
+    position: relative;
+    width: auto;
+    right: auto;
+    bottom: auto;
+    margin: 0;
+    margin-left: auto;
+    font-size:33px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article .text small{
+    display: block;
+    margin-top:5px;
+    padding-left:30px;
+    letter-spacing: -0.03em;
+    font-size:15px;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article .text em{
+    padding-left:30px;
+}
+/*/kit*/
+
+
+
+/*faq / sac*/
+
+#runners-ins--wrapper .runners-ins--section.parallax-duvidas .runners-ins--article section.faq {
+    padding-right: 0;
+  }
+
+#runners-ins--wrapper .runners-ins--section.parallax-duvidas .runners-ins--article > *.faq-sac {
+    width:53%;
+    margin-right:9%;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-duvidas .runners-ins--article section .title .small{
+    font-size: 32px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-duvidas .runners-ins--article section.sac .box{
+    width:50%;
+    padding-right: 40px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-duvidas .runners-ins--article section.sac .box:last-child {
+    width:50%;
+    margin-top: 0;
+    padding-right:0;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-duvidas .runners-ins--article section.sac .box .small{
+    font-size:17px;
+    letter-spacing:-.03em;
+}
+
+#runners-ins--wrapper .runners-ins--section .runners-ins--article .form-group textarea{
+    resize:none;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-duvidas .runners-ins--article section.contact .form-group input[type="submit"]{
+    transition:.3s var(--runners-ins--ease-out);
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-duvidas .runners-ins--article section.contact .form-group input[type="submit"]:hover{
+    background-color:var(--runners-ins--color-grayscale-1);
+    letter-spacing:.1em;
+}
+
+
+/*/faq / sac*/
+
+/*percurso*/
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .image-percurso {
+    position:relative;
+    height:550px;
+    display:flex;
+    align-items:stretch;
+    justify-content:center;
+    z-index: 4;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .decor-container{
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    height:100%;
+    z-index:6;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .image-percurso a {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:none;
+    z-index:7;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .image-percurso .rota {
+    position:relative;
+    height:100%;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .image-percurso .rota img{
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    opacity:0;
+    z-index:-1;
+    margin:0 auto;
+    max-height:100%;
+    transition:.4s;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .image-percurso .rota img.active{
+    opacity:1;
+    z-index:0;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .image-percurso .rota img.inactive{
+    opacity:0;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li{
+    position:relative;
+    letter-spacing:-.05em;
+    font-weight:normal;
+    cursor:pointer;
+    transition: .4s var(--runners-ins--ease-in-out);
+    background-color: var(--runners-ins--color-main-2);
+    box-shadow: 0 0 15px var(--runners-ins--color-extra-1);
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li em{
+    font-size: 15px;
+    font-style:normal;
+    text-transform: uppercase;
+    width: 100%;
+    height:15px;
+    z-index:-1;
+    text-align: center;
+    line-height: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    letter-spacing:0;
+    transition:.2s var(--runners-ins--ease-out);
+    opacity:0;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li:first-child{
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li:last-child{
+    letter-spacing:-.12em;
+    padding:0 70px;
+    margin-left:-50px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li:hover,
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li.breadcrumb{
+    padding-left: 100px;
+    padding-right: 100px;
+    letter-spacing: .02em!important;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li:hover em,
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li.breadcrumb em{
+    bottom: 16px;
+    opacity:1
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li:first-child:before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:100%;
+    height:100%;
+    width:50vw;
+    transition: .4s var(--runners-ins--ease-in-out);
+    background-color: var(--runners-ins--color-main-2);
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li.breadcrumb{
+    background-color: var(--runners-ins--color-grayscale-1);
+    color:var(--runners-ins--color-main-2);
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
+    font-weight:bold;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li.breadcrumb:first-child:before{
+    background-color: var(--runners-ins--color-grayscale-1);
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li:nth-child(1){
+    z-index:3;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li:nth-child(2){
+    z-index:2;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li:nth-child(2).breadcrumb{
+    color:var(--runners-ins--color-grayscale-f);
+}
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li:nth-child(3){
+    z-index:1;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .infos ul{
+    padding-left:0;
+    padding-right:170px;
+}
+/*/percurso*/
+
+/*parceiros*/
+#runners-ins--wrapper .runners-ins--section.parallax-parceiros{
+    padding-top:20px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-parceiros .runners-ins--title {
+    color: var(--runners-ins--color-main-2);
+    margin-bottom:0;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-parceiros .runners-ins--article {
+    padding:0 60px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-parceiros .runners-ins--article .logo-sponsor {
+    position:relative;
+  font-size: 0;
+  padding-right: 50px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-parceiros .runners-ins--article .logo-sponsor a{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-parceiros .runners-ins--article .logo-sponsor:before {
+  content: "";
+  display: block;
+  padding-top: 70%;
+  background-size: contain;
+  max-width:100%;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-parceiros .runners-ins--article .logo-sponsor:nth-child(1):before{
+    width: 300px;
+    background: url("../images/logo-sponsor-1.png") no-repeat center center;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-parceiros .runners-ins--article .logo-sponsor:nth-child(2){
+    top:-25px;
+}
+
+#runners-ins--wrapper .runners-ins--section.parallax-parceiros .runners-ins--article .logo-sponsor:nth-child(2):before{
+    width: 320px;
+    background: url("../images/logo-sponsor-2.png") no-repeat center center;
+}
+/*/parceiros*/
+
+/*runners*/
+#runners-ins--wrapper .runners-ins--section.parallax-runners .runners-ins--article .button{
+    margin:0;
+    margin-top:20px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 180px;
+    border: none;
+    font-family: "Adihaus DIN", Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 4px 10px 0;
+    font-size: 23px;
+    height: 46px;
+    line-height:1;
+    text-align:center;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    background-color:var(--runners-ins--color-main-2);
+    color:var(--runners-ins--color-grayscale-0);
+    transition:.3s var(--runners-ins--ease-out);
+    cursor:pointer;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-runners .runners-ins--article .button:hover{
+    background-color:var(--runners-ins--color-grayscale-f);
+    letter-spacing:.1em;
+}
+/*/runners*/
+
+/*cadastro*/
+#runners-ins--wrapper .runners-ins--section .runners-ins--article .form-group input[type="submit"], #runners-ins--wrapper .runners-ins--section .runners-ins--article .form-group select[type="submit"], #runners-ins--wrapper .runners-ins--section .runners-ins--article .form-group textarea[type="submit"]{
+    transition:.3s var(--runners-ins--ease-out);
+}
+#runners-ins--wrapper .runners-ins--section .runners-ins--article .form-group input[type="submit"]:hover, #runners-ins--wrapper .runners-ins--section .runners-ins--article .form-group select[type="submit"]:hover, #runners-ins--wrapper .runners-ins--section .runners-ins--article .form-group textarea[type="submit"]:hover{
+    background-color:var(--runners-ins--color-grayscale-f);
+    letter-spacing:.1em;
+}
+/*/cadastro*/
+
+/*sobre*/
+/*#runners-ins--wrapper .runners-ins--section.parallax-sobre .logo-sponsor{
+    position:absolute;
+    bottom:60px;
+    left:50%;
+    transform:translateX(-50%);
+    max-width:75%;
+}*/
+#runners-ins--wrapper .runners-ins--section.parallax-sobre a{
+    color:var(--runners-ins--color-grayscale-0);
+}
+#runners-ins--wrapper .runners-ins--section.parallax-sobre .runners-ins--article .button{
+    margin:0;
+    margin-top:20px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 360px;
+    border: none;
+    font-family: "Adihaus DIN", Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 4px 10px 0;
+    font-size: 23px;
+    height: 46px;
+    line-height:1;
+    text-align:center;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    background-color:var(--runners-ins--color-grayscale-0);
+    color:var(--runners-ins--color-grayscale-f);
+    transition:.3s var(--runners-ins--ease-out);
+    cursor:pointer;
+    box-sizing:border-box;
+}
+#runners-ins--wrapper .runners-ins--section.parallax-sobre .runners-ins--article:hover .button{
+    background-color:var(--runners-ins--color-grayscale-1);
+    letter-spacing:.1em;
+}
+/*/sobre*/
+
+/*responsive menu*/
+#runners-ins--wrapper .runners-ins--menu{
+    white-space:nowrap;
+}
+.menu{
+    border-radius: 0;
+    width: 42px;
+    height: 42px;
+    top: 0;
+    right: 0;
+    cursor:pointer;
+}
+
+.hamburguer{
+    width: 24px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    margin-left: -12px!important;
+    margin-top: -1px!important;
+}
+
+.hamburguer:before{
+    top:-9px;
+}
+
+.hamburguer:after{
+    bottom:-9px;
+}
+
+.sidebar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*/responsive menu*/
+
+/*footer*/
+#runners-ins--wrapper .runners-ins--footer-container{
+    background:var(--runners-ins--color-grayscale-0);
+    color:rgba(255,255,255,.3);
+}
+
+#runners-ins--wrapper .runners-ins--footer{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    font-size:12px;
+    text-transform:uppercase;
+}
+
+#runners-ins--wrapper .runners-ins--footer div{
+    padding:20px;
+}
+
+#runners-ins--wrapper .runners-ins--footer a{
+    color:var(--runners-ins--color-main-1);
+    text-decoration:underline;
+}
+/*/footer*/
+
+
+@media screen and (max-width:1519px){
+
+
+    /*home*/
+    /* #runners-ins--wrapper .runners-ins--section.parallax-home{   
+        padding: 6.5em 0px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article{
+        padding-top:130px;
+    } */
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos{   
+        padding-top: 80px;
+        padding-left: 20px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links {
+        /* margin-top: 80px; */
+        /*width: calc(180% + 50px);*/
+    }
+    /*/home*/
+
+    /*menu*/
+    #runners-ins--wrapper .runners-ins--menu{
+        top: 6.2em;
+        padding-top: 3em;
+    }
+    /*/menu*/
+
+    /*prova*/
+    #runners-ins--wrapper .runners-ins--section.parallax-prova{ 
+        padding: 0 0 8em;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--prova-container .runners-ins--prova{
+        padding-right:5em;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article{
+        justify-content:space-between;
+    }
+    /*/prova*/
+
+    /*kit*/
+    #runners-ins--wrapper .runners-ins--section.parallax-kit{
+        padding:0;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article img{
+        left:-420px;
+        top:-75px;
+    }
+    /*/kit*/
+
+    /*percurso*/
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .infos ul{
+        padding-right:0;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(1){
+        width: 38em;
+        top: -24em;
+        left: -16em;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(2){
+        width: 30em;
+        bottom: -15em;
+        right: -28em;
+    }
+    /*/percurso*/
+
+    /*duvidas*/
+    #runners-ins--wrapper .runners-ins--section.parallax-duvidas{
+        padding-bottom:8em;
+    }
+    /*/duvidas*/
+
+    /*fotos e resultados*/
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--fotos-container .runners-ins--fotos{
+        margin-bottom: 8em;
+    }
+    /*/fotos e resultados*/
+
+    /*cadastro*/
+    #runners-ins--wrapper .runners-ins--section.parallax-cadastro{
+        padding-bottom:8em;
+    }
+    /*/cadastro*/
+
+    /*sobre*/
+    #runners-ins--wrapper .runners-ins--section.parallax-sobre{
+        padding:0 0 8em;
+    }
+    /*/sobre*/
+
+}
+
+@media screen and (max-width:1199px){
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td,
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th{
+        word-break:normal;
+        padding:15px;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(1),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(1){
+        width: calc(25% - 10px) !important;
+        margin-right:10px !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(2),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(2){
+        width: calc(20% - 10px) !important;
+        margin-right:10px !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(3),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(3){
+        width: calc(30% - 10px) !important;
+        margin-right:10px !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(4),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(4){
+        width: 20% !important;
+    }
+
+    
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td.dataTables_empty{
+        width:100% !important;
+    }
+
+    /*menu*/
+    #runners-ins--wrapper .runners-ins--menu .runners-ins--list{
+        width:96% !important;
+    }
+    /*/menu*/
+    
+    /*home*/
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .logo{
+        width:47%;
+    }
+    /* #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos{
+        padding-left:0;
+        width:53%;
+    } */
+
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .logo .share{
+    position: static;
+    margin-top: 24px;
+    padding-right: 0;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos{   
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-left:0;
+        width:53%;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links {
+        /* margin-top: 40px; */
+        /*width: calc(180% + 50px);*/
+    }
+    /*/home*/
+
+    /*prova*/
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col{
+        width:50%;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col .links li a.dynamic-link:hover, #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col .links li a.dynamic-link.breadcrumb{
+        padding-left:30px;
+    }
+    /*/prova*/
+
+    /*kit*/
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article{
+        padding-right: 85px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article img{
+        left: -330px;
+        top: -63px;
+        max-width: 96%;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article .text{  
+        font-size: 30px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article .text em{
+        padding-left: 20px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article .text small{
+        padding-left: 20px;
+    }
+    /*/kit*/
+
+    /*footer*/
+    #runners-ins--wrapper .runners-ins--footer{
+        justify-content:center;
+        flex-direction:column;
+    }
+    /*/footer*/
+
+}
+
+@media screen and (max-width:991px){
+    
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td,
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th{
+        word-break:normal;
+        padding:8px;
+        font-size:24px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:after{
+        position: absolute;
+        top: 70%;
+        font-size: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(1),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(1){
+        width: calc(25% - 5px) !important;
+        margin-right:5px !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(2),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(2){
+        width: calc(20% - 5px) !important;
+        margin-right:5px !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(3),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(3){
+        width: calc(30% - 5px) !important;
+        margin-right:5px !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(4),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(4){
+        width: 20% !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr:last-child td{
+        min-height: 60px;
+    }
+
+    
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td.dataTables_empty{
+        width:100% !important;
+    }
+
+    /*home*/
+    #runners-ins--wrapper .runners-ins--section.parallax-home{   
+        padding: 9.2em 0px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(1){
+        width: 18em;
+        top: -6em;
+        left: -6em;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(2){
+        width: 18em;
+        bottom: -7em;
+        right: -7em;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(3){
+        width: 28em;
+        top: 0;
+        right: -20em;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(4){
+        width: 30em;
+        bottom: 0;
+        left: -12em;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article{
+        padding-top:100px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .logo{
+        max-width:none;
+        width:50%;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos{
+        text-align:center;
+        width:100%;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links {
+        justify-content:center;
+        /*width: calc(138% + 50px);*/
+    }
+    /*/home*/
+
+    /*prova*/
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(1){
+        width: 26em;
+        bottom: -4em;
+        right: -12em;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--prova-container .runners-ins--prova{
+        padding: 25px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col:first-child{
+        width: 100%;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col .links li a{
+        padding-left: 20%;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 90%;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col .links li a.dynamic-link:hover, #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col .links li a.dynamic-link.breadcrumb{
+        max-width: 100%;
+        padding-left: 25%;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col:last-child{
+        width: 100%;
+        padding:50px 0 50px 36px;
+    }
+    /*/prova*/
+
+    /*premiacao*/
+    #runners-ins--wrapper .runners-ins--section.parallax-premiacao .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(1){
+        width: 13em;
+        top: -3em;
+        left: -3em;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-premiacao .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(2){
+        width: 13em;
+        bottom: -4em;
+        right: -4em;
+    }
+
+    
+    #runners-ins--wrapper .runners-ins--section.parallax-premiacao .btn-close{
+        top:25px;
+        right:20px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-premiacao .col{
+        min-height:20em;
+    }
+    /*/premiacao*/
+
+    /*kit*/
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--kit-container .runners-ins--kit{
+        transform: translateX(0);
+        width: var(--runners-ins--container-width)!important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article{
+        padding: 40px 40px;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article img{
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        position: relative;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article .text{
+        width: 100%;
+        margin: 50px auto 0;
+        font-size: 36px;
+        text-align:center;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article .text br{
+        display:none
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article .text small{
+        padding-left:0;
+        position: relative;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article .text em{
+        padding-left:0;
+    }
+    /*/kit*/
+
+    /*percurso*/
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--parallax-decor{
+        display:none!important;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .image-percurso{
+        height: 420px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li{
+        width:40%;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li,
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li.breadcrumb{
+        padding-left:50px;
+        padding-right:50px;
+    }
+    /*/percurso*/
+    /*parceiros*/  
+    #runners-ins--wrapper .runners-ins--section.parallax-parceiros .runners-ins--article {
+        padding: 0 0 50px;
+        flex-direction: column;
+        max-width:90%;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-parceiros .runners-ins--article .logo-sponsor {
+      padding: 0 0 20px 0;
+    }
+    /*/parceiros*/
+    /*atracoes*/
+    #runners-ins--wrapper .runners-ins--section.parallax-atracoes .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(2){
+        width: 24em;
+        top: -7em;
+        right: -12em;
+    }
+    /*/atracoes*/
+    /*cadastro*/
+    #runners-ins--wrapper .runners-ins--section.parallax-cadastro .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(1){
+        width: 24em;
+        bottom: -1em;
+        left: -10em;
+    }
+    /*/cadastro*/
+
+    /*duvidas*/
+    #runners-ins--wrapper .runners-ins--section.parallax-duvidas .runners-ins--article{
+        flex-direction: column;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-duvidas .runners-ins--article > *.faq-sac{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-duvidas .runners-ins--article section.sac .box{
+        float:left;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-duvidas .runners-ins--article > *.contact{
+        width:100%;
+    }
+    /*/duvidas*/
+    /*sobre*/
+    #runners-ins--wrapper .runners-ins--section.parallax-sobre .runners-ins--article .button{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*/sobre*/
+    /*responsive menu*/
+    #runners-ins--wrapper .runners-ins--menu{
+        padding-top:0;
+        top:9.2em;
+    }
+    /*/responsive menu*/
+
+}
+
+@media screen and (max-width:767px){
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td{
+        font-size:15px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th{
+        font-size:18px;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(1),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(1){
+        width: calc(25% - 2px) !important;
+        margin-right:2px !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(2),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(2){
+        width: calc(20% - 2px) !important;
+        margin-right:2px !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(3),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(3){
+        width: calc(30% - 2px) !important;
+        margin-right:2px !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(4),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(4){
+        width: 20% !important;
+    }
+
+    /*home*/
+    #runners-ins--wrapper .runners-ins--section.parallax-home{
+        padding:5.5em 0;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(1){
+        width: 13em;
+        top: -3em;
+        left: -3em;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(2){
+        width: 13em;
+        bottom: -5em;
+        right: -5em;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(3){
+        width: 22em;
+        top: 0;
+        right: -16em;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(4){
+        width: 22em;
+        bottom: 0;
+        left: -8em;
+    }
+    
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td.dataTables_empty{
+        width:100% !important;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links {
+        justify-content:center;
+        width:100%;
+        /*width: calc(127% + 50px);*/
+    }
+    /*/home*/
+    /*prova*/
+    #runners-ins--wrapper .runners-ins--section.parallax-prova{
+        padding-bottom: 8em;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(1){
+        width: 18em;
+        bottom: -3em;
+        right: -6em;
+    }
+    /*/prova*/
+    /*premiacao*/
+    #runners-ins--wrapper .runners-ins--section.parallax-premiacao .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(1){
+        width: 9em;
+        top: -3em;
+        left: -3em;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-premiacao .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(2){
+        width: 9em;
+        bottom: -2.5em;
+        right: -3em;
+    }
+    /*/premiacao*/
+    /*kit*/
+    #runners-ins--wrapper .runners-ins--section.parallax-kit{
+        padding-bottom: 30px;
+    }
+    /*/kit*/
+    /*percurso*/
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .image-percurso a {
+        display:block;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .image-percurso{
+        max-height:320px;
+        background-position:center center;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li{
+        width: 40%;
+        height: 80px;
+        line-height: 80px;
+        font-size: 36px;
+        height: 80px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li,
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li.breadcrumb{
+        padding-left:30px;
+        padding-right:30px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li:hover, #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li.breadcrumb{
+        line-height:66px;
+    }
+    /*/percurso*/
+    /*parceiros*/
+    #runners-ins--wrapper .runners-ins--section.parallax-parceiros .runners-ins--article {
+        padding: 0 0 30px;
+    }
+    /*/parceiros*/
+    /*atracoes*/
+    #runners-ins--wrapper .runners-ins--section.parallax-atracoes .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(2){
+        width: 18em;
+        top: -6em;
+        right: -8em;
+    }
+    /*/atracoes*/
+    /*cadastro*/
+    #runners-ins--wrapper .runners-ins--section.parallax-cadastro .runners-ins--parallax-decor .runners-ins--parallax-decor-item:nth-child(1){
+        width: 18em;
+        bottom: -4em;
+        left: -8em;
+    }
+    /*/cadastro*/
+    /*sobre*/
+    #runners-ins--wrapper .runners-ins--section.parallax-sobre{
+        padding:150px 0 250px;
+    }
+    /*/sobre*/
+    /*responsive menu*/
+    #runners-ins--wrapper .runners-ins--menu{
+        top:5.5em;
+    }
+    /*/responsive menu*/
+}
+
+@media screen and (max-width:575px){
+
+    .paginate_button{
+        transform:none;
+        top:auto;
+        bottom: calc(100% - 60px);
+    }
+
+    .paginate_button:before{
+        font-size:40px;
+        width:40px;
+        height:40px;
+    }
+
+    .paginate_button.previous{
+        right: auto;
+        left: 0;
+    }
+    .paginate_button.next{
+        left: auto;
+        right: 0;
+    }
+
+    .dataTables_info{
+        padding:10px 40px !important;
+    }
+
+
+    .dataTables_filter label{
+        width:70%!important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td,
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th{
+        font-size:15px;
+        padding:4px 2px;
+        min-height:24px;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td{
+        font-size:13px;
+        min-height:18px;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(1),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(1){
+        width: calc(25% - 2px) !important;
+        margin-right:2px !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(2),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(2){
+        width: calc(17% - 2px) !important;
+        margin-right:2px !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(3),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(3){
+        width: calc(40% - 2px) !important;
+        margin-right:2px !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:nth-child(4),
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr th:nth-child(4){
+        width: 17% !important;
+    }
+
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td:last-child{
+        min-height:60px;
+    }
+
+    
+    #runners-ins--wrapper .runners-ins--section.parallax-fotos .runners-ins--resultados table tr td.dataTables_empty{
+        width:100% !important;
+    }
+
+    /*home*/
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links{
+        flex-direction:column;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links .link{
+        /*width: calc(100% - 20px);*/
+        margin-top: 20px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-home .runners-ins--article .infos .links .link:last-child{
+        margin-left: 0 !important;
+        /*transform: translateX(-12%);*/
+    }
+    /*/home*/
+    /*prova*/
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--prova-container .runners-ins--prova{
+        padding-right:25px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col .links li a,
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col .links li a:hover,
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col .links li a.breadcrumb
+    {
+        max-width: 100%;
+        padding: 0 12px!important;    
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-prova .runners-ins--article > .col:last-child{
+        padding-left: 0;
+    }
+    /*/prova*/
+    /*kit*/
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article{
+        padding: 40px 25px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article img{
+        max-width: calc(100% + 7.5em);
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article .text br{
+        display:block;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article .text{
+        width: 100%;
+        text-align: left;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-kit .runners-ins--article .text small{
+        top:0;
+        position: static;
+        display: block;
+        padding-left: 30px;
+    }
+    /*/kit*/
+    /*percurso*/
+    #runners-ins--wrapper .runners-ins--parallax-decor{
+        display:none!important;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .image-percurso{
+        max-height: 222px;
+    }
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li,
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li:hover,
+    #runners-ins--wrapper .runners-ins--section.parallax-percurso .runners-ins--article .distance ul li.breadcrumb{
+        width: 100%!important;
+        display: block;
+        margin-left: -6px !important;
+    }
+    /*/percurso*/
+    /*duvidas*/
+    #runners-ins--wrapper .runners-ins--section.parallax-duvidas .runners-ins--article section.sac .box{
+        padding: 0;
+        width: 100%!important;
+    }
+    /*/duvidas*/
+}
